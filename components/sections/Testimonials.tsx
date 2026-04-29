@@ -182,7 +182,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 }
 
 export default function Testimonials() {
-  const pageSize = 2; // show two cards per carousel slide
+  const pageSize = 2;
 
   function chunkPairs(arr: Testimonial[]) {
     const slides: Testimonial[][] = [];
@@ -193,7 +193,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="bg-[#16191F] px-4 py-14 sm:px-6 lg:px-8">
+    <section className="bg-[#16191F] px-6 py-14 md:px-8 lg:px-10">
       <div className="mx-auto w-full max-w-7xl">
         <header className="text-center">
           <p className="text-xs tracking-[0.2em] uppercase text-[#73695F]">
@@ -229,11 +229,11 @@ export default function Testimonials() {
                   value={category.value}
                   className="mt-10"
                 >
-                  <Carousel className="relative">
+                  <Carousel className="relative mt-8">
                     <CarouselContent>
                       {slides.map((pair, idx) => (
                         <CarouselItem key={`${category.value}-slide-${idx}`}>
-                          <div className="grid gap-6 px-8 sm:grid-cols-2">
+                          <div className="grid gap-6 px-10 md:px-8 md:grid-cols-2">
                             {pair.map((testimonial) => (
                               <TestimonialCard
                                 key={`${category.value}-${testimonial.name}-${testimonial.quote}`}
