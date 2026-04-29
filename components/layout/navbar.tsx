@@ -48,7 +48,7 @@ function TopBar() {
               rel="noopener noreferrer"
               className={cn(
                 "flex size-6 items-center justify-center rounded-full border border-law-gold/45 text-law-gold transition-colors",
-                "hover:border-law-gold hover:bg-white/5"
+                "hover:border-law-gold hover:bg-white/5",
               )}
               aria-label={label}
             >
@@ -60,7 +60,7 @@ function TopBar() {
           href={PHONE_HREF}
           className="text-sm tracking-wide text-law-gold transition-colors hover:text-law-gold/90"
         >
-          CALL 
+          CALL
           <span className="text-[#FFF7F099] pl-2">{PHONE_DISPLAY}</span>
         </a>
       </div>
@@ -75,10 +75,7 @@ function MainNav() {
   return (
     <div className="border-b border-b-[#C49E7833] bg-[#16191F]">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-5 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="font-heading shrink-0 text-lg font-semibold tracking-tight text-zinc-100 sm:text-xl"
-        >
+        <Link href="/">
           <Image src={logo} alt="deerdesigner" width={177} height={35} />
         </Link>
 
