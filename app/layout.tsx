@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Aboreto } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const aboreto = Aboreto({
   variable: "--font-aboreto",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className="min-h-screen flex-1 overflow-y-auto overflow-x-hidden bg-[#FFF7F0]">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
