@@ -49,7 +49,7 @@ function TopBar() {
               rel="noopener noreferrer"
               className={cn(
                 "flex size-6 items-center justify-center rounded-full border border-law-gold/45 text-law-gold transition-colors",
-                "hover:border-law-gold hover:bg-white/5",
+                "hover:border-law-gold hover:bg-white/5"
               )}
               aria-label={label}
             >
@@ -86,7 +86,7 @@ function MainNav() {
         >
           <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 lg:gap-x-8">
             {NAV_LINKS.map(({ href, label }) => (
-              <li key={href}>
+              <li key={label}>
                 <Link
                   href={href}
                   className="text-[0.875rem] font-medium tracking-wide text-[#FFFEFC] uppercase transition-colors hover:text-law-gold lg:text-[0.8rem]"

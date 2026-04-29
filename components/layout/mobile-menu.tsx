@@ -35,7 +35,7 @@ export function MobileMenu({
         className={cn(
           "inline-flex items-center justify-center",
           "rounded-sm text-law-gold",
-          "h-9 w-9 transition-colors hover:bg-white/5",
+          "h-9 w-9 transition-colors hover:bg-white/5"
         )}
       >
         {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -45,7 +45,7 @@ export function MobileMenu({
         <div
           className={cn(
             "fixed inset-0 z-60 bg-[#12161E]/85 backdrop-blur-sm",
-            "pt-[calc(env(safe-area-inset-top)+1rem)]",
+            "pt-[calc(env(safe-area-inset-top)+1rem)]"
           )}
         >
           <div className="mx-auto flex h-full max-w-7xl flex-col px-6 pb-10">
@@ -57,7 +57,7 @@ export function MobileMenu({
                 className={cn(
                   "inline-flex items-center justify-center",
                   "rounded-sm text-law-gold",
-                  "h-9 w-9 transition-colors hover:bg-white/5",
+                  "h-9 w-9 transition-colors hover:bg-white/5"
                 )}
               >
                 <X className="size-5" />
@@ -70,12 +70,12 @@ export function MobileMenu({
             >
               {links.map(({ href, label }) => (
                 <Link
-                  key={href}
+                  key={label}
                   href={href}
                   onClick={() => setOpen(false)}
                   className={cn(
                     "text-base font-semibold tracking-[0.14em] uppercase text-[#FFFEFC]",
-                    "transition-colors hover:text-law-gold",
+                    "transition-colors hover:text-law-gold"
                   )}
                 >
                   {label}
@@ -83,13 +83,13 @@ export function MobileMenu({
               ))}
 
               <Link
-                href="/contact"
+                href="#"
                 onClick={() => setOpen(false)}
                 className={cn(
                   "mt-3 inline-flex items-center justify-center",
                   "border border-law-gold bg-transparent px-6 py-3",
                   "text-sm font-semibold uppercase tracking-wide text-law-gold",
-                  "transition-colors hover:bg-law-gold hover:text-white",
+                  "transition-colors hover:bg-law-gold hover:text-white"
                 )}
               >
                 Schedule a consultation
