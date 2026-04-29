@@ -2,6 +2,8 @@ import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/public/deerdesigner.png";
+import Image from "next/image";
 
 const PHONE_DISPLAY = "919-626-9148";
 const PHONE_HREF = "tel:+19196269148";
@@ -67,17 +69,17 @@ function TopBar() {
 }
 
 const ctaClassName =
-  "border-law-gold text-law-gold uppercase tracking-wide hover:bg-law-gold/10 hover:text-law-gold";
+  "border-law-gold text-law-gold bg-transparent uppercase tracking-wide rounded-none hover:bg-law-gold hover:text-white";
 
 function MainNav() {
   return (
-    <div className="bg-law-nav">
-      <div className="mx-auto flex max-w-screen-2xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <div className="border-b border-b-[#C49E7833] bg-[#16191F]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-5 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="font-heading shrink-0 text-lg font-semibold tracking-tight text-zinc-100 sm:text-xl"
         >
-          Elis Family Law
+          <Image src={logo} alt="deerdesigner" width={177} height={35} />
         </Link>
 
         <nav
@@ -89,7 +91,7 @@ function MainNav() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[0.7rem] font-semibold tracking-wide text-zinc-100 uppercase transition-colors hover:text-law-gold lg:text-[0.8rem]"
+                  className="text-[0.875rem] font-medium tracking-wide text-[#FFFEFC] uppercase transition-colors hover:text-law-gold lg:text-[0.8rem]"
                 >
                   {label}
                 </Link>

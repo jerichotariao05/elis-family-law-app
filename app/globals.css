@@ -13,8 +13,6 @@
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-playfair), ui-serif, Georgia, "Times New Roman", serif;
   --color-law-gold: var(--law-gold);
-  --color-law-nav: var(--law-nav);
-  --color-law-nav-top: var(--law-nav-top);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -54,11 +52,7 @@
 }
 
 :root {
-  /* Law firm navbar / accent (pairs with Tailwind utilities: bg-law-nav, text-law-gold, etc.) */
-  --law-gold: #c5a073;
-  --law-gold-muted: rgba(197, 160, 115, 0.85);
-  --law-nav: #09090b;
-  --law-nav-top: #0c0c0e;
+  --law-gold: #C49E78;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -131,12 +125,15 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
+
   .font-heading {
     font-family: var(--font-heading);
   }
