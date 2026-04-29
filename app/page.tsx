@@ -5,6 +5,7 @@ import LegalGuidance from "../components/sections/LegalGuidance";
 import BoardCertified from "../components/sections/BoardCertified";
 import Consult from "../components/sections/Consult";
 import Testimonials from "../components/sections/Testimonials";
+import Locations from "../components/sections/Locations";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Partners />
       <Consult />
       <Testimonials />
+      <Locations />
     </>
   );
 }
