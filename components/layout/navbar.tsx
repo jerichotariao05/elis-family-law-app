@@ -4,35 +4,36 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logo from "@/public/deerdesigner.png";
 import Image from "next/image";
+import { MobileMenu } from "./mobile-menu";
 
 const PHONE_DISPLAY = "919-626-9148";
 const PHONE_HREF = "tel:+19196269148";
 
 const SOCIAL = [
   {
-    href: "https://www.facebook.com/",
+    href: "#",
     label: "Facebook",
     Icon: FaFacebookF,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "#",
     label: "LinkedIn",
     Icon: FaLinkedinIn,
   },
   {
-    href: "https://www.youtube.com/",
+    href: "#",
     label: "YouTube",
     Icon: FaYoutube,
   },
 ] as const;
 
 const NAV_LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/family-law", label: "Family Law" },
-  { href: "/estate-planning", label: "Estate Planning" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/resources", label: "Resources" },
-  { href: "/contact", label: "Contact" },
+  { href: "#", label: "About" },
+  { href: "#", label: "Family Law" },
+  { href: "#", label: "Estate Planning" },
+  { href: "#", label: "Testimonials" },
+  { href: "#", label: "Resources" },
+  { href: "#", label: "Contact" },
 ] as const;
 
 function TopBar() {
@@ -99,14 +100,11 @@ function MainNav() {
 
         <div className="hidden shrink-0 md:block">
           <Button variant="outline" size="sm" asChild className={ctaClassName}>
-            <Link href="/contact">Schedule a consultation</Link>
+            <Link href="#">Schedule a consultation</Link>
           </Button>
         </div>
-        <div className="shrink-0 md:hidden">
-          <Button variant="outline" size="sm" asChild className={ctaClassName}>
-            <Link href="/contact">Schedule</Link>
-          </Button>
-        </div>
+
+        <MobileMenu links={NAV_LINKS} className="shrink-0" />
       </div>
     </div>
   );

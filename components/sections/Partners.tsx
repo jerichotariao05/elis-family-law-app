@@ -12,6 +12,7 @@ import autumnImage from "@/public/autumn.jpg";
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const partners = [
@@ -87,7 +88,7 @@ export default function Partners() {
             size="lg"
             className="bg-law-gold text-[#16191F] uppercase tracking-[0.2em] rounded-none hover:opacity-90"
           >
-            <Link href="/contact" className="flex items-center gap-3 px-10">
+            <Link href="#" className="flex items-center gap-3 px-10">
               Meet all attorneys <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </Button>

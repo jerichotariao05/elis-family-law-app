@@ -10,6 +10,7 @@ import Link from "next/link";
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 function Hero() {
@@ -66,9 +67,12 @@ function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="h-13.5 w-full bg-law-gold text-white uppercase tracking-wide rounded-none md:flex-1"
+                className="h-13.5 w-full bg-law-gold text-[#16191F] uppercase tracking-wide rounded-none md:flex-1"
               >
-                <Link href="#" className="inline-flex w-full items-center justify-center gap-2">
+                <Link
+                  href="#"
+                  className="inline-flex w-full items-center justify-center gap-2"
+                >
                   Call now <ArrowRightIcon />
                 </Link>
               </Button>
@@ -78,7 +82,10 @@ function Hero() {
                 size="lg"
                 className="h-13.5 w-full border border-[#FFFEFC] bg-transparent text-[#FFFEFC] uppercase tracking-wide rounded-none md:flex-1"
               >
-                <Link href="#" className="inline-flex w-full items-center justify-center">
+                <Link
+                  href="#"
+                  className="inline-flex w-full items-center justify-center"
+                >
                   Schedule a consultation
                 </Link>
               </Button>

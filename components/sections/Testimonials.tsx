@@ -276,7 +276,7 @@ export default function Testimonials() {
           <Button
             asChild
             size="lg"
-            className="bg-[#C49E78] text-[#16191F] uppercase tracking-[0.2em] rounded-none hover:opacity-90"
+            className="bg-[#C49E78] text-[#16191F] uppercase tracking-[0.2em] rounded-none hover:text-[#FFFEFC]"
           >
             <Link href="#">
               Read More Testimonials{" "}

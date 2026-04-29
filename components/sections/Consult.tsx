@@ -9,6 +9,7 @@ import arrowSvg from "@/public/arrow.svg";
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 function Step({ index, title }: { index: string; title: string }) {
@@ -83,10 +84,7 @@ export default function Consult() {
               size="lg"
               className="bg-law-gold text-[#16191F] uppercase tracking-wide rounded-none whitespace-normal py-2 px-10"
             >
-              <Link
-                href="/about"
-                className="flex items-center justify-center gap-3"
-              >
+              <Link href="#" className="flex items-center justify-center gap-3">
                 <span>Learn more about us</span>
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>

@@ -5,45 +5,45 @@ import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const SOCIAL = [
   {
-    href: "https://www.facebook.com/",
+    href: "#",
     label: "Facebook",
     Icon: FaFacebookF,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "#",
     label: "LinkedIn",
     Icon: FaLinkedinIn,
   },
   {
-    href: "https://www.youtube.com/",
+    href: "#",
     label: "YouTube",
     Icon: FaYoutube,
   },
 ] as const;
 
 const QUICK_LINKS = [
-  { href: "/about", label: "About Us" },
-  { href: "/blog", label: "Blog" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/resources", label: "Resources" },
-  { href: "/contact", label: "Contact" },
-  { href: "/contact", label: "Schedule a Consultation" },
+  { href: "#", label: "About Us" },
+  { href: "#", label: "Blog" },
+  { href: "#", label: "Testimonials" },
+  { href: "#", label: "Resources" },
+  { href: "#", label: "Contact" },
+  { href: "#", label: "Schedule a Consultation" },
 ] as const;
 
 const FAMILY_LAW = [
-  { href: "/family-law/divorce", label: "Divorce" },
-  { href: "/family-law/high-asset-divorce", label: "High-Asset Divorce" },
-  { href: "/family-law/child-custody", label: "Child Custody" },
-  { href: "/family-law/child-support", label: "Child Support" },
-  { href: "/family-law/property-division", label: "Property Division" },
-  { href: "/family-law/spousal-support", label: "Spousal Support" },
-  { href: "/family-law/prenuptial-agreements", label: "Prenuptial Agreements" },
-  { href: "/family-law/domestic-violence", label: "Domestic Violence" },
+  { href: "#", label: "Divorce" },
+  { href: "#", label: "High-Asset Divorce" },
+  { href: "#", label: "Child Custody" },
+  { href: "#", label: "Child Support" },
+  { href: "#", label: "Property Division" },
+  { href: "#", label: "Spousal Support" },
+  { href: "#", label: "Prenuptial Agreements" },
+  { href: "#", label: "Domestic Violence" },
 ] as const;
 
 const ESTATE_PLANNING = [
-  { href: "/estate-planning/will-and-trust", label: "Will and Trust" },
-  { href: "/estate-planning/power-of-attorney", label: "Power of Attorney" },
+  { href: "#", label: "Will and Trust" },
+  { href: "#", label: "Power of Attorney" },
 ] as const;
 
 export default function Footer() {
@@ -51,8 +51,14 @@ export default function Footer() {
     <footer className="border-t border-t-[#C49E7833] bg-[#16191F] text-[#FFFEFC]">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-4">
-          <div className="flex flex-col items-center justify-center md:items-start justify-start">
-            <Image src={deerLogo} alt="Deer logo" width={129} height={129} />
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+            <Image
+              src={deerLogo}
+              alt="Deer logo"
+              width={129}
+              height={129}
+              loading="lazy"
+            />
 
             <div className="mt-5 flex items-center gap-4">
               {SOCIAL.map(({ href, label, Icon }) => (
@@ -132,10 +138,10 @@ export default function Footer() {
         </div>
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6 justify-center items-center md:flex-row md:items-center md:justify-between lg:px-8">
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-[#FFF7F099]">
-            <Link href="/privacy" className="hover:text-law-gold">
+            <Link href="#" className="hover:text-law-gold">
               Privacy Policy
             </Link>
-            <Link href="/disclaimer" className="hover:text-law-gold">
+            <Link href="#" className="hover:text-law-gold">
               Disclaimer
             </Link>
           </div>
