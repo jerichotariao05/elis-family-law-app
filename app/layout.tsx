@@ -11,7 +11,8 @@ const aboreto = Aboreto({
 
 export const metadata: Metadata = {
   title: "Elis Family Law",
-  description: "Divorce & Family Law Attorneys Serving Durham, Raleigh, Cary, the Triangle, and Throughout North Carolina.",
+  description:
+    "Divorce & Family Law Attorneys Serving Durham, Raleigh, Cary, the Triangle, and Throughout North Carolina.",
 };
 
 export default function RootLayout({
@@ -20,10 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${aboreto.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${aboreto.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <Navbar />
         <main className="min-h-screen flex-1 overflow-hidden bg-[#FFF7F0]">

@@ -23,7 +23,10 @@ function Hero() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#16191F]/75" aria-hidden />
+      <div
+        className="absolute inset-0 bg-linear-to-b from-[#16191F]/90 via-[#16191F]/60 to-[#16191F]/90"
+        aria-hidden
+      />
       <Image
         src={leftVector}
         alt=""
